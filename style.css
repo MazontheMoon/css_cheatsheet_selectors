@@ -4,13 +4,12 @@ Declare variables for page
 :root {
   /*color scheme*/
 
-  /*borders and margins*/    
-      
+  /*borders and margins*/
 }
 
-/*============
-Back to Basics
-===============*/
+/*======================================
+Back to Basics - reset browser defaults
+=======================================*/
 html,
 body {
   scroll-behavior: smooth;
@@ -26,3 +25,17 @@ body * {
   -moz-box-sizing: border-box;
   margin: 0;
 }
+
+/*================
+The little touches
+=================*/
+
+/*In case of image not found*/
+
+/*=============
+Responsiveness
+===============*/
+
+/*Media queries for portable screen views - tablets and phones*/
+
+/*Media queries for print view*/
