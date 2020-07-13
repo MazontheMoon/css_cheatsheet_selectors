@@ -1,9 +1,18 @@
-# css_cheatsheet_selectors
+# CSS Cheatsheet - Selectors
  My cheatsheets to teach myself to code - this lesson is for CSS Selectors 
+ 
+## Table of Contents 
 
-### Prerequisites
+* Simple selectors
+* Attribute selectors
+* Pseudo classes
+* Pseudo elements
+* Combinators and multiple selectors
+
+## Prerequisites
 
 Web Browser
+
 
 ## Built With
 
@@ -12,6 +21,7 @@ Web Browser
 * Sweat and tears and laughter
 
 ## Software
+
 * Brackets
 * CodePen
 * Github Desktop
