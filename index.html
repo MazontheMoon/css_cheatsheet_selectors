@@ -18,26 +18,34 @@ Finding your way around
 1. nav menu bar - line
 2. main content - line
 3. section 1 - Simple Selectors - line
-   section 1a - Element - line
+   section 1a - Element  - line
    section 1b - Class - line
    section 1c - Universal - line
 4. section 2 - Attribute Selectors - line 
    section 2a - Presence and value - line
-   section 2b - substring value - line
+   section 2b - Substring value - line
 5. section 3 - Pseudo Classes - line 
 6. section 4 - Pseudo Elements - line 
-7. section 5 - Combinators & Multiple Selectors - line 
+7. section 5 - Combinators - line
+8. section 6 - Multiple Selectors - line 
 8. footer - line
 --------------------------------------------------->
 
 <body>
   <!--Header-->
-  <header>
+  <header id="top_of_page">
     <h1>CSS Selectors</h1>
   </header>
   <!--nav menu - 5 sections-->
   <nav>
-    <ul></ul>
+    <ul class="nav-bar">
+      <li><a href="#simple">Simple Selectors</a></li>
+      <li><a href="#attribute">Attribute Selectors</a></li>
+      <li><a href="#pseudo-class">Pseudo Class</a></li>
+      <li><a href="#pseudo-element">Pseudo Element</a></li>
+      <li><a href="#combinator">Combinators</a></li>
+      <li><a href="#multiple">Multiple Elements</a></li>
+    </ul>
   </nav>
   <!--main content-->
   <main>
@@ -47,15 +55,39 @@ Finding your way around
       <section id="simple">
         <!--section heading-->
         <header>
-          <h3></h3>
+          <h3>Simple Selectors</h3>
         </header>
         <!--section content-->
         <div class="section-content">
-          <!--subsection content-->
+          <p></p>
+          <ul class="section-content-list">
+            <li>Elements</li>
+            <li>Classes</li>
+            <li>Universal</li>
+          </ul>
+          <!--subsectionA Elements-->
           <div class="subsection">
             <!--subsection header-->
             <div class="subsection-header">
-              <h5></h5>
+              <h5>Elements</h5>
+            </div>
+            <!--subsection content-->
+            <div class="subsection-content"></div>
+          </div>
+          <!--subsectionB Classes-->
+          <div class="subsection">
+            <!--subsection header-->
+            <div class="subsection-header">
+              <h5>Classes</h5>
+            </div>
+            <!--subsection content-->
+            <div class="subsection-content"></div>
+          </div>
+          <!--subsectionC Universal-->
+          <div class="subsection">
+            <!--subsection header-->
+            <div class="subsection-header">
+              <h5>Universal</h5>
             </div>
             <!--subsection content-->
             <div class="subsection-content"></div>
@@ -66,15 +98,29 @@ Finding your way around
       <section id="attribute">
         <!--section heading-->
         <header>
-          <h3></h3>
+          <h3>Attribute Selectors</h3>
         </header>
         <!--section content-->
         <div class="section-content">
-          <!--subsection content-->
+          <p></p>
+          <ul class="section-content-list">
+            <li>Presence and Value</li>
+            <li>Substring value</li>
+          </ul>
+          <!--subsectionA Presence and Value-->
           <div class="subsection">
             <!--subsection header-->
             <div class="subsection-header">
-              <h5></h5>
+              <h5>Presence and Value</h5>
+            </div>
+            <!--subsection content-->
+            <div class="subsection-content"></div>
+          </div>
+          <!--subsectionB Substring-->
+          <div class="subsection">
+            <!--subsection header-->
+            <div class="subsection-header">
+              <h5>Substring value</h5>
             </div>
             <!--subsection content-->
             <div class="subsection-content"></div>
@@ -85,7 +131,7 @@ Finding your way around
       <section id="pseudo-class">
         <!--section heading-->
         <header>
-          <h3></h3>
+          <h3>Pseudo Class</h3>
         </header>
         <!--section content-->
         <div class="section-content"></div>
@@ -94,16 +140,25 @@ Finding your way around
       <section id="pseudo-element">
         <!--section heading-->
         <header>
-          <h3></h3>
+          <h3>Pseudo Element</h3>
         </header>
         <!--section content-->
         <div class="section-content"></div>
       </section>
       <!--section5 - combinator-multiple -->
-      <section id="combinator-multiple">
+      <section id="combinator">
         <!--section heading-->
         <header>
-          <h3></h3>
+          <h3>Combinators</h3>
+        </header>
+        <!--section content-->
+        <div class="section-content"></div>
+      </section>
+      <!--section6 - multiple -->
+      <section id="multiple">
+        <!--section heading-->
+        <header>
+          <h3>Multiple Selectors</h3>
         </header>
         <!--section content-->
         <div class="section-content"></div>
@@ -111,6 +166,7 @@ Finding your way around
     </div>
   </main>
   <!--footer-->
-  <footer></footer>
+  <footer>
+  </footer>
 </body>
 </html>
