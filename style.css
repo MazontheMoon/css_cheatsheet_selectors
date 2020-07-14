@@ -4,7 +4,40 @@ Declare variables for page
 :root {
   /*color scheme*/
 
-  /*borders and margins*/
+  /*page background*/
+  /*header background*/
+  /*nav bar background*/
+  /*section background*/
+  /*footer background*/
+  /*header border*/
+  /*section border*/
+  /*section header border*/
+  /*sub section header border*/
+  /*header text*/
+  /*nav button text*/
+  /*section header text*/
+  /*section sub header text*/
+  /*text*/
+  /*footer text*/
+
+  /*margin sizes - change depending on screen size*/
+
+  /*header margin*/
+  /*main margin*/
+  /*container margin*/
+  /*section margin*/
+  /*section header margin*/
+  /*sub section margin*/
+  /*sub section header margin*/
+  /*footer margin*/
+
+  /*font sizes - change depending on screen size*/
+
+  /*header*/
+  /*section header*/
+  /*sub section header*/
+  /*section text*/
+  /*footer text*/
 }
 
 /*======================================
@@ -25,6 +58,54 @@ body * {
   -moz-box-sizing: border-box;
   margin: 0;
 }
+
+/*================
+Layout
+=================*/
+header {
+}
+
+nav {
+}
+
+main {
+}
+
+section {
+}
+
+/*================
+Nav Menu Bar
+=================*/
+
+.nav-bar {
+}
+
+/*================
+Section Styling
+=================*/
+
+section header {
+}
+
+section .section-content {
+}
+
+section .section-content-list {
+}
+
+section .subsection {
+}
+
+section .subsection .subsection-header {
+}
+
+section .subsection .subsection-content {
+}
+
+/*=====
+Footer
+======*/
 
 /*================
 The little touches
