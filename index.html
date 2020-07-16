@@ -59,10 +59,11 @@ Finding your way around
         </header>
         <!--section content-->
         <div class="section-content">
-          <p></p>
+          <p>The style is applied to one or more elements based on the type of element, it’s class, or it's id. Simple eh!</p>
           <ul class="section-content-list">
             <li>Elements</li>
             <li>Classes</li>
+            <li>ID</li>
             <li>Universal</li>
           </ul>
           <!--subsectionA Elements-->
@@ -72,7 +73,12 @@ Finding your way around
               <h5>Elements</h5>
             </div>
             <!--subsection content-->
-            <div class="subsection-content"></div>
+            <div class="subsection-content">
+              <p>The style is applied to every element of that type and is useful for applying page wide or fallback styles</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*All p elements are blue*/</span>
+                <br>p {<br>color: blue<br>}</p>
+            </div>
           </div>
           <!--subsectionB Classes-->
           <div class="subsection">
@@ -81,16 +87,43 @@ Finding your way around
               <h5>Classes</h5>
             </div>
             <!--subsection content-->
-            <div class="subsection-content"></div>
+            <div class="subsection-content">
+              <p>The class selector consists of a dot (.) followed by a class name (with no spaces in the class name).<br>
+                Multiple elements in the document can have the same class name and a single element can have multiple class names (separated by spaces) which makes this selector type useful when applying a style to a variety of different types of elements.</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*Add a solid black border*/</span>
+                <br>.box-outline {<br>border: 2px solid black;<br>}</p>
+            </div>
           </div>
-          <!--subsectionC Universal-->
+          <!--subsectionC ID-->
+          <div class="subsection">
+            <!--subsection header-->
+            <div class="subsection-header">
+              <h5>ID</h5>
+            </div>
+            <!--subsection content-->
+            <div class="subsection-content">
+              <p>The ID selector consists of a hashtag (#) followed by ID name (must be unique) of a given element.<br>
+                This is different to class styling as multiple html elements can use the same class but only a single element can have an id (There can be only one!)</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*styling for first box in form*/</span>
+                <br>#top-box {<br>background-color: grey;<br>border: 2px dashed black;<br>}</p>
+            </div>
+          </div>
+          <!--subsectionD Universal-->
           <div class="subsection">
             <!--subsection header-->
             <div class="subsection-header">
               <h5>Universal</h5>
             </div>
             <!--subsection content-->
-            <div class="subsection-content"></div>
+            <div class="subsection-content">
+              <p>The most simple selector of them all may be the universal selector.<br>
+                * is the universal selector and is rarely useful by itself but often used in combination with other selectors.</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*reset default margins*/</span>
+                <br>ul * {<br>margin: 0; <br>padding: 0;<br>border: 1px dashed grey;<br>}</p>
+            </div>
           </div>
         </div>
       </section>
