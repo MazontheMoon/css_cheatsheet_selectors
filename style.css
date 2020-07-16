@@ -71,6 +71,9 @@ nav {
 main {
 }
 
+.container {
+}
+
 section {
 }
 
@@ -103,9 +106,19 @@ section .subsection .subsection-header {
 section .subsection .subsection-content {
 }
 
+section .code-example-box {
+}
+
+section .code-example-box .comment-code {
+}
+
 /*=====
 Footer
 ======*/
+
+/*==========
+Link styles
+===========*/
 
 /*================
 The little touches
@@ -118,5 +131,24 @@ Responsiveness
 ===============*/
 
 /*Media queries for portable screen views - tablets and phones*/
+
+/*margin sizes - change depending on screen size*/
+
+/*header margin*/
+/*main margin*/
+/*container margin*/
+/*section margin*/
+/*section header margin*/
+/*sub section margin*/
+/*sub section header margin*/
+/*footer margin*/
+
+/*font sizes - change depending on screen size*/
+
+/*header*/
+/*section header*/
+/*sub section header*/
+/*section text*/
+/*footer text*/
 
 /*Media queries for print view*/
