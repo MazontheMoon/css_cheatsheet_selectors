@@ -135,7 +135,8 @@ Finding your way around
         </header>
         <!--section content-->
         <div class="section-content">
-          <p></p>
+          <p>Attribute selectors match one or more elements based on their attributes/attribute values.</p>
+          <p>The generic syntax consists of square brackets [] containing an attribute name followed by optional condition to match against the value of the attribute (this makes much more sense when you see the examples below).</p>
           <ul class="section-content-list">
             <li>Presence and Value</li>
             <li>Substring value</li>
@@ -147,7 +148,35 @@ Finding your way around
               <h5>Presence and Value</h5>
             </div>
             <!--subsection content-->
-            <div class="subsection-content"></div>
+            <div class="subsection-content">
+              <p>Try to match an exact attribute or attribute value of an element. This will make much more sense when you see the examples below (Well...a bit more sense)</p>
+              <ul>
+                <li>
+                  <p>[attr] – this will select all elements with the attribute attr</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style all li elements with a class attribute*/</span>
+                    <br>li[class] {<br>list-style: none;<br>
+                    }</p>
+                </li>
+                <li>
+                  <p>[attr=val] – this will select all elements
+                    <p class="code-example-box">
+                      <span class="comment-code">/*style li elements with a class attribute with the value "classy"*/</span>
+                      <br>li[class="classy"] {<br>
+                      background-color: grey;<br>
+                      }</p>
+                </li>
+                <li>
+                  <p>[attr~=val] – this will select all elements with the attribute attr but only if the value &apos;val&apos; is one of a space separated list of values for attr</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style li elements with a class attribute with a value of “class” but only when “class” is not the only value for that attribute - say that five times fast*/</span>
+                    <br>li[class~="class"] {<br>
+                    color: purple;<br>
+                    }</p>
+
+                </li>
+              </ul>
+            </div>
           </div>
           <!--subsectionB Substring-->
           <div class="subsection">
