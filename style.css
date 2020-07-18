@@ -106,7 +106,9 @@ section .subsection .subsection-header {
 section .subsection .subsection-content {
 }
 
-section .code-example-box {
+section .subsection .subsection-content ul {
+}
+a section .code-example-box {
 }
 
 section .code-example-box .comment-code {
