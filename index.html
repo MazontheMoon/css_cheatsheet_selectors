@@ -185,7 +185,43 @@ Finding your way around
               <h5>Substring value</h5>
             </div>
             <!--subsection content-->
-            <div class="subsection-content"></div>
+            <div class="subsection-content">
+              <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
+              <ul>
+                <li>
+                  <p>[attr|=val] – this will select elements with the attribute attr for which the value is exactly &apos;val&apos; or starts with val</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style for all li elements with a class attribute but only if the value is "class"*/</span>
+                    <br>li[class|="class"] {<br>
+                    font-size: 2rem;<br>
+                    }</p>
+                </li>
+                <li>
+                  <p>[attr^=val] – this will select all elements with the attribute attr for which the value starts with &apos;val&apos;</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style for li elements with a class attribute where the value begins with "class"*/</span>
+                    <br>li[class^="class"] {<br>
+                    color: purple;<br>
+                    }</p>
+                </li>
+                <li>
+                  <p>[attr$=val] – this will select all elements with the attribute attr for which the value ends with &apos;val&apos;</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style for li elements with a class attribute where the value ends with "class"*/</span>
+                    <br>li[class$="class"] {<br>
+                    color: purple;<br>
+                    }</p>
+                </li>
+                <li>
+                  <p>[attr*=val] – this will select all elements with the attribute attr for which the value contains the string &apos;val&apos; (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</p>
+                  <p class="code-example-box">
+                    <span class="comment-code">/*style for li elements with a class attribute where the value includes "class" anywhere in the string*/</span>
+                    <br>li[class*="class"] {<br>
+                    text-decoration: underline;<br>
+                    }</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -196,7 +232,10 @@ Finding your way around
           <h3>Pseudo Class</h3>
         </header>
         <!--section content-->
-        <div class="section-content"></div>
+        <div class="section-content">
+
+          <!--examples of pseudo class keywords-->
+        </div>
       </section>
       <!--section4 - pseudo-element -->
       <section id="pseudo-element">
