@@ -95,6 +95,13 @@ Nav Menu Bar
 }
 
 /*================
+Extra Font Styling
+=================*/
+
+.mini-header {
+  font-weight: bold;
+}
+/*================
 Section Styling
 =================*/
 
@@ -118,7 +125,8 @@ section .subsection .subsection-content {
 
 section .subsection .subsection-content ul {
 }
-a section .code-example-box {
+
+section .code-example-box {
 }
 
 section .code-example-box .comment-code {
