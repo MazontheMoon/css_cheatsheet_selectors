@@ -299,7 +299,35 @@ Finding your way around
           <h3>Pseudo Element</h3>
         </header>
         <!--section content-->
-        <div class="section-content"></div>
+        <div class="section-content">
+          <p>Pseudo-elements may be used more often than pseudo-classes and are used to target elements that do not technically exist in the HTML document in that they allow you to add content to an element in the HTML document.</p>
+          <p>Similar to pseudo-classes but are preceded with two colons (::) and are added to the end of selectors to select a certain part of the element.</p>
+          <p>You can use only one pseudo-element in a selector. It must appear after the simple selectors in the statement.</p>
+          <ul>
+            <li>
+              <p class="code-example-box">
+                <span class="comment-code">/*add arrow icon after all external http links*/</span>
+                <br>[href^=http]::after {<br>
+                content: '⤴';<br>
+                }</p>
+            </li>
+            <li>
+              <!--examples of pseudo element keywords-->
+              <p>Some examples...</p>
+              <ul>
+                <li><code>::after</code></li>
+                <li><code>::before</code></li>
+                <li><code>::cue</code></li>
+                <li><code>::cue-region</code></li>
+                <li><code>::first-letter</code></li>
+                <li><code>::first-line</code></li>
+                <li><code>::selection</code></li>
+                <li><code>::slotted()</code></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
       </section>
       <!--section5 - combinator-multiple -->
       <section id="combinator">
