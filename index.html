@@ -152,14 +152,14 @@ Finding your way around
               <p>Try to match an exact attribute or attribute value of an element. This will make much more sense when you see the examples below (Well...a bit more sense)</p>
               <ul>
                 <li>
-                  <p>[attr] – this will select all elements with the attribute attr</p>
+                  <p><span class="mini-header">[attr]</span> – this will select all elements with the attribute attr</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style all li elements with a class attribute*/</span>
                     <br>li[class] {<br>list-style: none;<br>
                     }</p>
                 </li>
                 <li>
-                  <p>[attr=val] – this will select all elements
+                  <p><span class="mini-header">[attr=val]</span> – this will select all elements
                     <p class="code-example-box">
                       <span class="comment-code">/*style li elements with a class attribute with the value "classy"*/</span>
                       <br>li[class="classy"] {<br>
@@ -167,7 +167,7 @@ Finding your way around
                       }</p>
                 </li>
                 <li>
-                  <p>[attr~=val] – this will select all elements with the attribute attr but only if the value &apos;val&apos; is one of a space separated list of values for attr</p>
+                  <p><span class="mini-header">[attr~=val]</span> – this will select all elements with the attribute attr but only if the value &apos;val&apos; is one of a space separated list of values for attr</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style li elements with a class attribute with a value of “class” but only when “class” is not the only value for that attribute - say that five times fast*/</span>
                     <br>li[class~="class"] {<br>
@@ -188,7 +188,7 @@ Finding your way around
               <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
               <ul>
                 <li>
-                  <p>[attr|=val] – this will select elements with the attribute attr for which the value is exactly &apos;val&apos; or starts with val</p>
+                  <p><span class="mini-header">[attr|=val]</span> – this will select elements with the attribute attr for which the value is exactly &apos;val&apos; or starts with val</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style for all li elements with a class attribute but only if the value is "class"*/</span>
                     <br>li[class|="class"] {<br>
@@ -196,7 +196,7 @@ Finding your way around
                     }</p>
                 </li>
                 <li>
-                  <p>[attr^=val] – this will select all elements with the attribute attr for which the value starts with &apos;val&apos;</p>
+                  <p><span class="mini-header">[attr^=val]</span> – this will select all elements with the attribute attr for which the value starts with &apos;val&apos;</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style for li elements with a class attribute where the value begins with "class"*/</span>
                     <br>li[class^="class"] {<br>
@@ -204,7 +204,7 @@ Finding your way around
                     }</p>
                 </li>
                 <li>
-                  <p>[attr$=val] – this will select all elements with the attribute attr for which the value ends with &apos;val&apos;</p>
+                  <p><span class="mini-header">[attr$=val]</span> – this will select all elements with the attribute attr for which the value ends with &apos;val&apos;</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style for li elements with a class attribute where the value ends with "class"*/</span>
                     <br>li[class$="class"] {<br>
@@ -212,7 +212,7 @@ Finding your way around
                     }</p>
                 </li>
                 <li>
-                  <p>[attr*=val] – this will select all elements with the attribute attr for which the value contains the string &apos;val&apos; (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</p>
+                  <p><span class="mini-header">[attr*=val]</span> – this will select all elements with the attribute attr for which the value contains the string &apos;val&apos; (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</p>
                   <p class="code-example-box">
                     <span class="comment-code">/*style for li elements with a class attribute where the value includes "class" anywhere in the string*/</span>
                     <br>li[class*="class"] {<br>
@@ -325,7 +325,6 @@ Finding your way around
                 <li><code>::slotted()</code></li>
               </ul>
             </li>
-
           </ul>
         </div>
       </section>
@@ -336,7 +335,54 @@ Finding your way around
           <h3>Combinators</h3>
         </header>
         <!--section content-->
-        <div class="section-content"></div>
+        <div class="section-content">
+          <p>Not exactly selectors themselves but ways of combining two or more selectors in useful ways for very specific selections, such as only paragraphs that come directly after headings</p>
+          <p>CSS has several ways to select elements based on how they are related to one another:</p>
+          <ul>
+            <li>
+              <p><span class="mini-header">Group of selectors (A, B)</span> - Any element matching A and /or B</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*All img elements within
+                  li elements and/or all a elements within
+                  li elements*/</span>
+                <br>li img, li a {<br>
+                border: 2px solid red;<br>
+                }</p>
+            </li>
+            <li>
+              <p><span class="mini-header">Descendant selector (A B)</span> - Any element matching B which is a descendant of an element matching A</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*Any a elements within a li element*/</span>
+                <br>li a {<br>
+                border: 1px dotted black;<br>
+                }</p>
+            </li>
+            <li>
+              <p><span class="mini-header">Child selector (A > B)</span> - Any element matching B that is a direct child of an element matching A</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*Any ul element within a li element*/</span>
+                <br>li > ul {<br>
+                background-color: grey;<br>
+                }</p>
+            </li>
+            <li>
+              <p><span class="mini-header">Adjacent sibling selector (A + B)</span> - Any element matching B that is the next sibling of an element matching A</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*Any p element that comes immediately after a h1 element*/</span>
+                <br>h1 + p {<br>
+                font-size: 1.5rem;<br>
+                }</p>
+            </li>
+            <li>
+              <p><span class="mini-header">General sibling selector (A ~ B)</span> - Any element matching B that is one of the next siblings of an element matching A</p>
+              <p class="code-example-box">
+                <span class="comment-code">/*All p elements that come after a h1 element*/</span>
+                <br>h1 ~ p {<br>
+                color: darkgrey;<br>
+                }</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--section6 - multiple -->
       <section id="multiple">
