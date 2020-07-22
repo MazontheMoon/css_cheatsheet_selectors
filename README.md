@@ -5,7 +5,6 @@
 
 Web Browser
 
-
 ## Built With
 
 * HTML
@@ -21,6 +20,7 @@ Web Browser
 ## Versioning
 
 Version #1.1 - Initial Content
+Version #1.2 - Initial Styling
 
 ## Table of Contents 
 
@@ -33,6 +33,11 @@ Version #1.1 - Initial Content
 ## Authors
 
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
+
+## Conventions
+
+* Naming convention using hyphens (-) to seperate words:
+Example "section-content"
 
 ## Resources
 
