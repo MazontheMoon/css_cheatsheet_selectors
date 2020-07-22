@@ -2,42 +2,50 @@
 Declare variables for page
 =========================*/
 :root {
-  /*color scheme*/
-
-  /*page background*/
-  /*header background*/
-  /*nav bar background*/
-  /*section background*/
-  /*footer background*/
-  /*header border*/
-  /*section border*/
-  /*section header border*/
-  /*sub section header border*/
-  /*header text*/
-  /*nav button text*/
-  /*section header text*/
-  /*section sub header text*/
-  /*text*/
-  /*footer text*/
+  /*colour pallette*/
+  --page-background-colour: #eef8ff; /*offwhite*/
+  --section-background-colour: #424874; /*purple*/
+  --navbar-colour: #20a39e; /*seagreen*/
+  --border-colour: #fdca40; /*sunshine yellow*/
+  --page-text-colour: #000; /*black*/
 
   /*margin sizes - change depending on screen size*/
+  /*
+  --header-margin:;
+  --main-margin:;
+  --container-margin:;
+  --section-margin:;
+  --section-header-margin:;
+  --sub-section-margin:;
+  --sub-section-header-margin:;
+  --footer-margin:;
+  */
 
-  /*header margin*/
-  /*main margin*/
-  /*container margin*/
-  /*section margin*/
-  /*section header margin*/
-  /*sub section margin*/
-  /*sub section header margin*/
-  /*footer margin*/
+  /*padding sizes - change depending on screen size*/
+  /*
+  --header-padding:;
+  --main-padding:;
+  --container-padding:;
+  --section-padding:;
+  --section-header-padding:;
+  --sub-section-padding:;
+  --sub-section-header-padding:;
+  --footer-padding:;
+  */
 
   /*font sizes - change depending on screen size*/
 
-  /*header*/
-  /*section header*/
-  /*sub section header*/
-  /*section text*/
-  /*footer text*/
+  /*
+  --page-header-text:;
+  --section-header-text:;
+  --sub-section-header-text:;
+  --mini-section-header-text:;
+  --nav-buttons-text:;
+  --links-text;;
+  --page-text:;
+  --code-text:;
+  --footer-text;
+  */
 }
 
 /*======================================
@@ -49,6 +57,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: var(--page-background, white);
 }
 
 /*set global styles*/
