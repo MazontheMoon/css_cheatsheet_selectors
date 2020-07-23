@@ -50,7 +50,7 @@ Example "section-content"
 * Coolors
 
 ## Acknowledgments
-We would like to offer our appreciation to Spotify and the *Lord of the Rings* soundtrack for providing the suitable background noise for this project
+We would like to offer our appreciation to Spotify and the *Horizon Zero Dawn* game soundtrack and *Lord of the Rings* movie soundtracks for providing the suitable background noise for this project
 
 ## License
 
