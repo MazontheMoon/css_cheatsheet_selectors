@@ -7,6 +7,7 @@ Declare variables for page
   --section-background-colour: #424874; /*purple*/
   --navbar-colour: #20a39e; /*seagreen*/
   --border-colour: #fdca40; /*sunshine yellow*/
+  --header-text-colour: #eef8ff; /*offwhite*/
   --page-text-colour: #000; /*black*/
 
   /*margin sizes - change depending on screen size*/
@@ -32,6 +33,10 @@ Declare variables for page
   --sub-section-header-padding:;
   --footer-padding:;
   */
+
+  /*font types*/
+  --header-font:font-family: 'Chivo', sans-serif;
+  --text-font:font-family: 'Roboto', sans-serif;
 
   /*font sizes - change depending on screen size*/
 
@@ -74,10 +79,13 @@ h1,
 h3,
 h5,
 p,
-li,
-code {
+li {
+ font-family: 'Trebuchet MS', sans-serif; 
 }
 
+code {
+  font-family: 'Courier New', monospace;
+}
 /*================
 Layout
 =================*/
