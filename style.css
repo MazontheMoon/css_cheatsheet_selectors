@@ -35,8 +35,8 @@ Declare variables for page
   */
 
   /*font types*/
-  --header-font:font-family: 'Chivo', sans-serif;
-  --text-font:font-family: 'Roboto', sans-serif;
+  --header-font: "Chivo", sans-serif;
+  --text-font: "Roboto", sans-serif;
 
   /*font sizes - change depending on screen size*/
 
@@ -80,15 +80,18 @@ h3,
 h5,
 p,
 li {
- font-family: 'Trebuchet MS', sans-serif; 
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 code {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 /*================
 Layout
 =================*/
+body {
+}
+
 header {
 }
 
@@ -114,6 +117,31 @@ Nav Menu Bar
 /*================
 Extra Font Styling
 =================*/
+
+h1 {
+  font-family: var(--header-font, "Trebuchet MS", sans-serif);
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-family: var(--header-font, "Trebuchet MS", sans-serif);
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h5 {
+  font-family: var(--header-font, "Trebuchet MS", sans-serif);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+p,
+li {
+  font-family: var(--text-font, Arial, sans-serif);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 .mini-header {
   font-weight: bold;
