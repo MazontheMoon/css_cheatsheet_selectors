@@ -52,15 +52,21 @@ code {
 Layout
 =================*/
 body {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   margin: 0 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
   background-color: var(--navbar-colour, teal);
-  padding: 0 0.75rem;
+  padding: 1rem;
 }
 
 main {
@@ -71,6 +77,9 @@ main {
 }
 
 section {
+  display: flex;
+  margin: 1.75rem 0.75rem;
+  background-color: var(--section-background-colour, purple);
 }
 
 /*================
@@ -87,6 +96,7 @@ nav .nav-bar {
 
 nav .nav-bar .menu-button {
   color: var(--header-text-colour, white);
+  text-shadow: 2px 2px 3px black;
   text-decoration: none;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -133,9 +143,15 @@ Section Styling
 =================*/
 
 section header {
+  flex: 1;
+  align-self: flex-start;
+  color: var(--header-text-colour, white);
+  text-shadow: 2px 2px 3px black;
 }
 
 section .section-content {
+  flex: 3;
+  background-color: var(--page-background-colour, white);
 }
 
 section .section-content-list {
