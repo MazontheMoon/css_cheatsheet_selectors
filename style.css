@@ -10,47 +10,9 @@ Declare variables for page
   --header-text-colour: #eef8ff; /*offwhite*/
   --page-text-colour: #000; /*black*/
 
-  /*margin sizes - change depending on screen size*/
-  /*
-  --header-margin:;
-  --main-margin:;
-  --container-margin:;
-  --section-margin:;
-  --section-header-margin:;
-  --sub-section-margin:;
-  --sub-section-header-margin:;
-  --footer-margin:;
-  */
-
-  /*padding sizes - change depending on screen size*/
-  /*
-  --header-padding:;
-  --main-padding:;
-  --container-padding:;
-  --section-padding:;
-  --section-header-padding:;
-  --sub-section-padding:;
-  --sub-section-header-padding:;
-  --footer-padding:;
-  */
-
   /*font types*/
   --header-font: "Chivo", sans-serif;
   --text-font: "Roboto", sans-serif;
-
-  /*font sizes - change depending on screen size*/
-
-  /*
-  --page-header-text:;
-  --section-header-text:;
-  --sub-section-header-text:;
-  --mini-section-header-text:;
-  --nav-buttons-text:;
-  --links-text;;
-  --page-text:;
-  --code-text:;
-  --footer-text;
-  */
 }
 
 /*======================================
@@ -93,12 +55,16 @@ body {
 }
 
 header {
+  margin: 0 0.75rem;
 }
 
 nav {
+  background-color: var(--navbar-colour, teal);
+  padding: 0 0.75rem;
 }
 
 main {
+  margin: 0 0.75rem;
 }
 
 .container {
@@ -111,12 +77,28 @@ section {
 Nav Menu Bar
 =================*/
 
-.nav-bar {
+nav .nav-bar {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
 }
 
+nav .nav-bar .menu-button {
+  color: var(--header-text-colour, white);
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 /*================
 Extra Font Styling
 =================*/
+
+#logo {
+  font-size: 2rem;
+  padding-right: 2rem;
+}
 
 h1 {
   font-family: var(--header-font, "Trebuchet MS", sans-serif);
