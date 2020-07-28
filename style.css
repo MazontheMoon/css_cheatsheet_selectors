@@ -56,21 +56,28 @@ body {
   flex-direction: column;
 }
 
-header {
-  margin: 0 0.75rem;
+#top {
+  margin: 0;
   padding: 1rem;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+    180deg,
+    var(--section-background-colour, purple),
+    var(--navbar-colour, teal)
+  );
 }
 
 nav {
   background-color: var(--navbar-colour, teal);
   padding: 1rem;
+  border-bottom: 2px solid black;
 }
 
 main {
-  margin: 0 0.75rem;
+  background-color: var(--page-background-colour, white);
 }
 
 .container {
@@ -106,14 +113,20 @@ Extra Font Styling
 =================*/
 
 #logo {
-  font-size: 2rem;
-  padding-right: 2rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  position: absolute;
+  left: 0;
 }
 
 h1 {
   font-family: var(--header-font, "Trebuchet MS", sans-serif);
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.5rem;
+  color: var(--header-text-colour, white);
+  text-shadow: 2px 2px 3px black;
 }
 
 h3 {
@@ -147,11 +160,15 @@ section header {
   align-self: flex-start;
   color: var(--header-text-colour, white);
   text-shadow: 2px 2px 3px black;
+  text-align: center;
+  padding: 1rem;
 }
 
 section .section-content {
   flex: 3;
   background-color: var(--page-background-colour, white);
+  border-left: 0.25rem solid black;
+  padding: 1rem;
 }
 
 section .section-content-list {
@@ -199,14 +216,6 @@ Responsiveness
 
 /*margin sizes - change depending on screen size*/
 
-/*header margin*/
-/*main margin*/
-/*container margin*/
-/*section margin*/
-/*section header margin*/
-/*sub section margin*/
-/*sub section header margin*/
-/*footer margin*/
 
 /*font sizes - change depending on screen size*/
 
