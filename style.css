@@ -195,7 +195,14 @@ section .code-example-box .comment-code {
 /*=====
 Footer
 ======*/
-
+footer {
+  background: linear-gradient(
+    180deg,
+    var(--navbar-colour, teal),
+    var(--section-background-colour, purple)
+  );
+  color: var(--header-text-colour, white);
+}
 /*==========
 Link styles
 ===========*/
@@ -216,6 +223,14 @@ Responsiveness
 
 /*margin sizes - change depending on screen size*/
 
+/*header margin*/
+/*main margin*/
+/*container margin*/
+/*section margin*/
+/*section header margin*/
+/*sub section margin*/
+/*sub section header margin*/
+/*footer margin*/
 
 /*font sizes - change depending on screen size*/
 
