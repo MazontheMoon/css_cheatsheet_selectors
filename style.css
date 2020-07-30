@@ -6,7 +6,7 @@ Declare variables for page
   --page-background-colour: #eef8ff; /*offwhite*/
   --section-background-colour: #424874; /*purple*/
   --navbar-colour: #20a39e; /*seagreen*/
-  --border-colour: #fdca40; /*sunshine yellow*/
+  --box-colour: #f8d87f; /*sandy yellow*/
   --header-text-colour: #eef8ff; /*offwhite*/
   --page-text-colour: #000; /*black*/
 
@@ -169,29 +169,52 @@ section header {
 section .section-content {
   flex: 3;
   background-color: var(--page-background-colour, white);
+  color: var(--page-text-colour, black);
   border-left: 0.25rem solid black;
   padding: 1rem;
 }
 
 section .section-content-list {
+  margin: 0.5rem 0;
+  list-style: square;
 }
 
 section .subsection {
+  padding-left: 2rem;
 }
 
 section .subsection .subsection-header {
+  background: linear-gradient(
+    90deg,
+    var(--section-background-colour, purple),
+    var(--page-background-colour, white)
+  );
+  border-left: solid 3px black;
+  padding-left: 0.5rem;
+  color: var(--header-text-colour, white);
+  text-shadow: 2px 2px 2px black;
 }
 
 section .subsection .subsection-content {
+  padding: 0.5rem;
 }
 
 section .subsection .subsection-content ul {
 }
 
 section .code-example-box {
+  margin: 1rem;
+  background: linear-gradient(
+    90deg,
+    var(--box-colour, yellow),
+    var(--page-background-colour, white)
+  );
+  padding: 0.5rem;
 }
 
 section .code-example-box .comment-code {
+  opacity: 0.7;
+  font-style: italic;
 }
 
 /*=====
