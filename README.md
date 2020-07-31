@@ -34,10 +34,21 @@ Version #1.2 - Initial Styling
 
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
-## Conventions
+## Code Conventions
 
-* Naming convention using hyphens (-) to seperate words:
+Naming convention using hyphens (-) to seperate words:
 Example "section-content"
+
+## Git Commit Naming Conventions
+
+* Only implemented midway in version #1.2 - Initial Styling
+
+Keyword: Description FILE
+Examples:
+
+*fix: Typo in sectionA content INDEX
+*style: Added colour schema to page STYLESHEET
+*add: New content for sectionB INDEX
 
 ## Resources
 
