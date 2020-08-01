@@ -81,6 +81,7 @@ main {
 }
 
 .container {
+  position: relative;
 }
 
 section {
@@ -179,6 +180,25 @@ section .section-content-list {
   list-style: square;
 }
 
+section .section-content-non-list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+section .section-content-non-list .code-keyword-sublist {
+  list-style: square;
+}
+
+section .section-content-non-list .code-keyword-sublist li {
+  width: 50%;
+  margin-bottom: 0.2rem;
+  background: linear-gradient(
+    90deg,
+    var(--box-colour, yellow),
+    var(--page-background-colour, white)
+  );
+}
+
 section .subsection {
   padding-left: 2rem;
 }
@@ -199,7 +219,9 @@ section .subsection .subsection-content {
   padding: 0.5rem;
 }
 
-section .subsection .subsection-content ul {
+section .subsection .subsection-content .subsection-content-list {
+  list-style: none;
+  margin-top: 1rem;
 }
 
 section .code-example-box {
