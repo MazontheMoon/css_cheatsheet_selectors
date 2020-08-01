@@ -46,7 +46,7 @@ Finding your way around
       <li><a class="menu-button" href="#pseudo-class">Pseudo Class</a></li>
       <li><a class="menu-button" href="#pseudo-element">Pseudo Element</a></li>
       <li><a class="menu-button" href="#combinator">Combinators</a></li>
-      <li><a class="menu-button" href="#multiple">Multiple Elements</a></li>
+      <li><a class="menu-button" href="#multiple">Multiple Selectors</a></li>
     </ul>
   </nav>
   <!--main content-->
@@ -139,6 +139,7 @@ Finding your way around
         <div class="section-content">
           <p>Attribute selectors match one or more elements based on their attributes/attribute values.</p>
           <p>The generic syntax consists of square brackets [] containing an attribute name followed by optional condition to match against the value of the attribute (this makes much more sense when you see the examples below).</p>
+          <p>These can be split into two categories:</p>
           <ul class="section-content-list">
             <li>Presence and Value</li>
             <li>Substring value</li>
@@ -152,7 +153,7 @@ Finding your way around
             <!--subsection content-->
             <div class="subsection-content">
               <p>Try to match an exact attribute or attribute value of an element. This will make much more sense when you see the examples below (Well...a bit more sense)</p>
-              <ul>
+              <ul class="subsection-content-list">
                 <li>
                   <p><span class="mini-header">[attr]</span> – this will select all elements with the attribute attr</p>
                   <p class="code-example-box">
@@ -161,7 +162,7 @@ Finding your way around
                     }</p>
                 </li>
                 <li>
-                  <p><span class="mini-header">[attr=val]</span> – this will select all elements
+                  <p><span class="mini-header">[attr=val]</span> – this will select all elements with the attribute attr but only if attr value is val
                     <p class="code-example-box">
                       <span class="comment-code">/*style li elements with a class attribute with the value "classy"*/</span>
                       <br>li[class="classy"] {<br>
@@ -188,7 +189,7 @@ Finding your way around
             <!--subsection content-->
             <div class="subsection-content">
               <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
-              <ul>
+              <ul class="subsection-content-list">
                 <li>
                   <p><span class="mini-header">[attr|=val]</span> – this will select elements with the attribute attr for which the value is exactly &apos;val&apos; or starts with val</p>
                   <p class="code-example-box">
@@ -236,7 +237,7 @@ Finding your way around
         <div class="section-content">
           <p>Pseudo-classes allow you to select one or more elements that exist in a certain state such as mouse hover, or an element that is the first child of its parent in the DOM tree (like the first word in a paragraph, or the first div in an article, etc.)</p>
           <p>A pseudo-class is a keyword preceded by a colon(:) added to the end of selectors to specify you want to style the selected elements but only when in a certain state such as mouse hover.</p>
-          <ul>
+          <ul class="section-content-non-list">
             <li>
               <p class="code-example-box">
                 <span class="comment-code">/*Change color of link on mouse hover*/</span>
@@ -247,7 +248,7 @@ Finding your way around
             <li>
               <!--examples of pseudo class keywords-->
               <p>Some examples...</p>
-              <ul>
+              <ul class="code-keyword-sublist">
                 <li><code>:active</code></li>
                 <li><code>:checked</code></li>
                 <li><code>:default</code></li>
@@ -305,7 +306,7 @@ Finding your way around
           <p>Pseudo-elements may be used more often than pseudo-classes and are used to target elements that do not technically exist in the HTML document in that they allow you to add content to an element in the HTML document.</p>
           <p>Similar to pseudo-classes but are preceded with two colons (::) and are added to the end of selectors to select a certain part of the element.</p>
           <p>You can use only one pseudo-element in a selector. It must appear after the simple selectors in the statement.</p>
-          <ul>
+          <ul class="section-content-non-list">
             <li>
               <p class="code-example-box">
                 <span class="comment-code">/*add arrow icon after all external http links*/</span>
@@ -316,7 +317,7 @@ Finding your way around
             <li>
               <!--examples of pseudo element keywords-->
               <p>Some examples...</p>
-              <ul>
+              <ul class="code-keyword-sublist">
                 <li><code>::after</code></li>
                 <li><code>::before</code></li>
                 <li><code>::cue</code></li>
@@ -340,7 +341,7 @@ Finding your way around
         <div class="section-content">
           <p>Not exactly selectors themselves but ways of combining two or more selectors in useful ways for very specific selections, such as only paragraphs that come directly after headings</p>
           <p>CSS has several ways to select elements based on how they are related to one another:</p>
-          <ul>
+          <ul class="section-content-non-list">
             <li>
               <p><span class="mini-header">Group of selectors (A, B)</span> - Any element matching A and /or B</p>
               <p class="code-example-box">
@@ -395,7 +396,7 @@ Finding your way around
         <!--section content-->
         <div class="section-content">
           <p>Not separate selectors; the idea is that you can put multiple selectors on the same CSS rule, separated by commas, to apply a single set of declarations to all the elements selected by those selectors</p>
-          <ul>
+          <ul class="section-content-non-list">
             <li>
               <p class="code-example-box">
                 <span class="comment-code">/*fallback font style*/</span>
