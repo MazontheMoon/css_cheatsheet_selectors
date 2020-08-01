@@ -34,7 +34,7 @@ Version #1.2 - Initial Styling
 
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
-## Code Conventions
+## Code Naming Conventions
 
 Naming convention using hyphens (-) to seperate words:
 Example "section-content"
@@ -48,7 +48,10 @@ Examples:
 
 *fix: Typo in sectionA content INDEX
 *style: Added colour schema to page STYLESHEET
-*add: New content for sectionB INDEX
+*new: Adding new content for sectionB INDEX
+*docs: Added naming convention rules to README
+*test: Testing accessibility for styles in STYLESHEET
+
 
 ## Resources
 
