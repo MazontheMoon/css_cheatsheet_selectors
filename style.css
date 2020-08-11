@@ -261,20 +261,39 @@ footer {
   text-align: center;
 }
 
+/*Link styles*/
+
 #allaboutme p a {
   padding: 0 0.25rem;
   font-size: 1.25rem;
 }
 
-/*==========
-Link styles
-===========*/
+#allaboutme p a:link {
+  color: var(--page-text-colour, black);
+}
+
+#allaboutme p a:visited {
+  text-shadow: var(--header-text-colour, white) -1px -1px 3px;
+  color: var(--section-background-colour, purple);
+}
+
+#allaboutme p a:focus {
+  text-shadow: var(--header-text-colour, white) 2px 2px 2px;
+}
+
+#allaboutme p a:hover {
+  text-shadow: var(--header-text-colour, white) 2px 2px 2px;
+}
+
+#allaboutme p a:active {
+  text-shadow: var(--header-text-colour, white) 2px 2px 2px,
+    var(--header-text-colour, white) -2px -2px 2px;
+  color: var(--page-text-colour, black);
+}
 
 /*================
 The little touches
 =================*/
-
-/*In case of image not found*/
 
 /*Back to top*/
 .backtotop {
@@ -290,16 +309,7 @@ Responsiveness
 
 /*Media queries for portable screen views - tablets and phones*/
 
-/*margin sizes - change depending on screen size*/
-
-/*header margin*/
-/*main margin*/
-/*container margin*/
-/*section margin*/
-/*section header margin*/
-/*sub section margin*/
-/*sub section header margin*/
-/*footer margin*/
+/*Layout - single column*/
 
 /*font sizes - change depending on screen size*/
 
