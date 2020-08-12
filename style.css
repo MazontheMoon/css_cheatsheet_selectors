@@ -109,6 +109,21 @@ nav .nav-bar .menu-button {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
+nav .nav-bar .menu-button:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--section-background-colour, purple);
+}
+
+nav .nav-bar .menu-button:hover {
+  text-decoration: underline;
+}
+
+nav .nav-bar .menu-button:active {
+  text-decoration: underline;
+  text-decoration-color: var(--section-background-colour, purple);
+}
+
 /*================
 Extra Font Styling
 =================*/
@@ -263,29 +278,29 @@ footer {
 
 /*Link styles*/
 
-#allaboutme p a {
+#allaboutme a {
   padding: 0 0.25rem;
   font-size: 1.25rem;
 }
 
-#allaboutme p a:link {
+footer a:link {
   color: var(--page-text-colour, black);
 }
 
-#allaboutme p a:visited {
+footer a:visited {
   text-shadow: var(--header-text-colour, white) -1px -1px 3px;
   color: var(--section-background-colour, purple);
 }
 
-#allaboutme p a:focus {
+footer a:focus {
   text-shadow: var(--header-text-colour, white) 2px 2px 2px;
 }
 
-#allaboutme p a:hover {
+footer a:hover {
   text-shadow: var(--header-text-colour, white) 2px 2px 2px;
 }
 
-#allaboutme p a:active {
+footer a:active {
   text-shadow: var(--header-text-colour, white) 2px 2px 2px,
     var(--header-text-colour, white) -2px -2px 2px;
   color: var(--page-text-colour, black);
