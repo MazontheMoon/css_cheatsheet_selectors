@@ -321,17 +321,22 @@ The little touches
 /*=============
 Responsiveness
 ===============*/
-
 /*Media queries for portable screen views - tablets and phones*/
 
-/*Layout - single column*/
+@media screen and (max-width: 766px) {
+  /*Layout - single column*/
 
-/*font sizes - change depending on screen size*/
+  section {
+    flex-flow: column no-wrap;
+  }
 
-/*header*/
-/*section header*/
-/*sub section header*/
-/*section text*/
-/*footer text*/
+  /*font sizes - change depending on screen size*/
+
+  /*header*/
+  /*section header*/
+  /*sub section header*/
+  /*section text*/
+  /*footer text*/
+}
 
 /*Media queries for print view*/
