@@ -327,9 +327,32 @@ Responsiveness
   /*Layout - single column*/
 
   section {
-    flex-flow: column no-wrap;
+    flex-direction: column;
+    padding: 0.3rem;
   }
 
+  section .section-content {
+    flex: 1;
+    border-left: none;
+    padding: 0.3rem;
+  }
+
+  section .section-content-non-list .code-keyword-sublist li {
+    width: 85%;
+  }
+
+  section .subsection {
+    padding-left: 0.5rem;
+  }
+
+  section .subsection .subsection-content .subsection-content-list {
+    margin-top: 0.5rem;
+  }
+
+  section .code-example-box {
+    margin: 0.5rem;
+    padding: 0.25rem;
+  }
   /*font sizes - change depending on screen size*/
 
   /*header*/
