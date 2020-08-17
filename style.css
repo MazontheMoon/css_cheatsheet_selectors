@@ -201,7 +201,7 @@ section .section-content-non-list {
 }
 
 section .section-content-non-list .code-keyword-sublist {
-  list-style: square;
+  list-style: none;
 }
 
 section .section-content-non-list .code-keyword-sublist li {
@@ -337,16 +337,25 @@ Responsiveness
     padding: 0.3rem;
   }
 
+  section .section-content-non-list {
+    padding-left: 0.25rem;
+  }
+
+  section .section-content-non-list .code-keyword-sublist {
+    padding-left: 0.5rem;
+  }
+
   section .section-content-non-list .code-keyword-sublist li {
     width: 85%;
   }
 
   section .subsection {
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
   }
 
   section .subsection .subsection-content .subsection-content-list {
     margin-top: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   section .code-example-box {
@@ -355,6 +364,9 @@ Responsiveness
   }
   /*font sizes - change depending on screen size*/
 
+  #logo {
+    display: none;
+  }
   /*header*/
   /*section header*/
   /*sub section header*/
