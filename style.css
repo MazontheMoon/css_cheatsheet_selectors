@@ -41,13 +41,16 @@ h1,
 h3,
 h5,
 p,
-li {
+li,
+code {
   font-family: "Trebuchet MS", sans-serif;
 }
 
 code {
-  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
+
 /*================
 Layout
 =================*/
@@ -367,11 +370,75 @@ Responsiveness
   #logo {
     display: none;
   }
-  /*header*/
-  /*section header*/
-  /*sub section header*/
-  /*section text*/
-  /*footer text*/
 }
 
-/*Media queries for print view*/
+/*=============
+Print View
+===============*/
+@media print {
+  /*reset colours to plain black and white*/
+  body * {
+    background-color: none;
+    font-size: 12pt;
+    text-shadow: none;
+  }
+
+  h1,
+  h3,
+  h5,
+  p,
+  li,
+  code {
+    color: black;
+  }
+
+  /*font size*/
+  h1 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  h5 {
+    font-size: 14pt;
+  }
+
+  /*remove unneeded elements*/
+  #logo,
+  nav,
+  .backtotop {
+    display: none;
+  }
+
+  /*Layout - single column*/
+  section {
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+
+  section .section-content {
+    border-left: none;
+  }
+
+  main {
+    display: none;
+  }
+  /*display links from footer*/
+  footer a:link {
+    margin: 0;
+    display: block;
+  }
+
+  footer a::after {
+    content: " [" attr(href) "]";
+  }
+
+  footer .link a:link,
+  footer .link a:visited {
+    color: #000;
+    background: none;
+    padding: 0;
+  }
+}
