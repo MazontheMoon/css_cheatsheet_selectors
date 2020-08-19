@@ -21,6 +21,7 @@ Web Browser
 
 Version #1.1 - Initial Content
 Version #1.2 - Initial Styling
+Version #1.3 - Testing
 
 ## Table of Contents 
 
@@ -46,11 +47,12 @@ Example "section-content"
 Keyword: Description FILE
 Examples:
 
-*fix: Typo in sectionA content INDEX
-*style: Added colour schema to page STYLESHEET
-*new: Adding new content for sectionB INDEX
-*docs: Added naming convention rules to README
-*test: Testing accessibility for styles in STYLESHEET
+* new: Adding new content for sectionB INDEX
+* update: added info to existing section on INDEX
+* fix: Typo in sectionA content INDEX
+* style: Added colour schema to page STYLESHEET
+* docs: Added naming convention rules to README
+* test: Testing accessibility for styles in STYLESHEET
 
 
 ## Resources
