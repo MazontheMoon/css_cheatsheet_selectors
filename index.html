@@ -250,47 +250,171 @@ Finding your way around
               <!--examples of pseudo class keywords-->
               <p>Some examples...</p>
               <ul class="code-keyword-sublist">
-                <li><code>:active</code></li>
-                <li><code>:checked</code></li>
-                <li><code>:default</code></li>
-                <li><code>:defined</code></li>
-                <li><code>:disabled</code></li>
-                <li><code>:empty</code></li>
-                <li><code>:enabled</code></li>
-                <li><code>:first</code></li>
-                <li><code>:first-child</code></li>
-                <li><code>:first-of-type</code></li>
-                <li><code>:focus</code></li>
-                <li><code>:focus-within</code></li>
-                <li><code>:host</code></li>
-                <li><code>:host()</code></li>
-                <li><code>:hover</code></li>
-                <li><code>:indeterminate</code></li>
-                <li><code>:in-range</code></li>
-                <li><code>:invalid</code></li>
-                <li><code>:lang()</code></li>
-                <li><code>:last-child</code></li>
-                <li><code>:last-of-type</code></li>
-                <li><code>:left</code></li>
-                <li><code>:link</code></li>
-                <li><code>:not()</code></li>
-                <li><code>:nth-child()</code></li>
-                <li><code>:nth-last-child()</code></li>
-                <li><code>:nth-last-of-type()</code></li>
-                <li><code>:nth-of-type()</code></li>
-                <li><code>:only-child</code></li>
-                <li><code>:only-of-type</code></li>
-                <li><code>:optional</code></li>
-                <li><code>:out-of-range</code></li>
-                <li><code>:read-only</code></li>
-                <li><code>:read-write</code></li>
-                <li><code>:required</code></li>
-                <li><code>:right</code></li>
-                <li><code>:root</code></li>
-                <li><code>:scope</code></li>
-                <li><code>:target</code></li>
-                <li><code>:valid</code></li>
-                <li><code>:visited</code></li>
+                <li>
+                  <code>:active</code>
+                  <p>...represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button</p>
+                </li>
+                <li>
+                  <code>:checked</code>
+                  <p>...represents any radio, checkbox, or option type input element that is checked or toggled to an on state.</p>
+                </li>
+                <li>
+                  <code>:default</code>
+                  <p>...represents any radio, checkbox, option, or button type input element that hat are the default in a group of related elements.</p>
+
+                </li>
+                <li><code>:defined</code>
+                  <p>...represents any element that has been defined (This is useful if you have a complex custom element that takes a while to load into the page — not(:defined) - you might want to hide instances of the element until definition is complete)</p>
+
+                </li>
+                <li>
+                  <code>:disabled</code>
+                  <p>...represents any disabled element.</p>
+                </li>
+                <li>
+                  <code>:empty</code>
+                  <p>...represents any element that has no children.</p>
+                </li>
+                <li>
+                  <code>:enabled</code>
+                  <p>...represents any enabled element.</p>
+                </li>
+                <li>
+                  <code>:first</code>
+                  <p>...represents the first page of a printed document and is used with <i>@page</i> rule.</p>
+                </li>
+                <li>
+                  <code>:first-child</code>
+                  <p>...represents the first element among a group of sibling elements.</p>
+                </li>
+                <li>
+                  <code>:first-of-type</code>
+                  <p>...represents the first element of its type among a group of sibling elements.</p>
+                </li>
+                <li>
+                  <code>:focus</code>
+                  <p>...represents an element that has received focus. It is generally triggered on form input when the user clicks or taps on an element or selects it with the keyboard's Tab key.</p>
+                </li>
+                <li>
+                  <code>:focus-within</code>
+                  <p>... represents an element that has received focus or contains an element that has received focus (For example used for highlighting an entire <i>form</i>container when the user focuses on one of its <i>input</i> fields)</p>
+                </li>
+                <li>
+                  <code>:host</code>
+                  <p>... selects the shadow host of the shadow DOM containing the CSS it is used inside(<b>has no effect when used outside a shadow DOM)</b></p>
+                </li>
+                <li>
+                  <code>:host()</code>
+                  <p>...selects the shadow host of the shadow DOM containing the CSS it is used inside BUT only if the selector given as the function's parameter matches the shadow host.</p>
+                </li>
+                <li>
+                  <code>:hover</code>
+                  <p>...triggered when the user hovers over an element with the cursor (mouse pointer).</p>
+                </li>
+                <li>
+                  <code>:indeterminate</code>
+                  <p>...represents any form element whose state is indeterminate (such as checkboxes which have their HTML indeterminate attribute set to true, radio buttons which are members of a group in which all radio buttons are unchecked, and indeterminate <i>progress</i> elements)</p>
+                </li>
+                <li>
+                  <code>:in-range</code>
+                  <p>...represents an input element whose current value is within the range limits specified by the min and max attributes (cane be used to give the user a visual indication that a field's current value is within the permitted limits).</p>
+                </li>
+                <li>
+                  <code>:invalid</code>
+                  <p>...represents any input or other form element whose contents fail to validate (useful to highlight errors when filling out a form).</p>
+                </li>
+                <li>
+                  <code>:lang()</code>
+                  <p>...matches elements based on the language they are determined to be in.</p>
+                </li>
+                <li>
+                  <code>:last-child</code>
+                  <p>...represents the last element among a group of sibling elements.</p>
+                </li>
+                <li>
+                  <code>:last-of-type</code>
+                  <p>...represents the last element of its type among a group of sibling elements.</p>
+                </li>
+                <li>
+                  <code>:left</code>
+                  <p>...represents all left-hand pages of a printed document and is used with <i>@page</i> rule.</p>
+                </li>
+                <li>
+                  <code>:link</code>
+                  <p>...represents an element that has not yet been visited. (matches every a, area or link element with href attribute)</p>
+                </li>
+                <li>
+                  <code>:not()</code>
+                  <p>...represents elements that do not match a list of selectors</p>
+                </li>
+                <li>
+                  <code>:nth-child()</code>
+                  <p>...matches elements based on their position in a group of siblings..for example <i>:nth-child(3)</i> selects the third element and <i>:nth-child(3n)</i> selectes every third element.</p>
+                </li>
+                <li>
+                  <code>:nth-last-child()</code>
+                  <p>...matches elements based on their position among a group of siblings, counting from the end (same as <i>:nth-child()</i> but counts in backwards direction).</p>
+                </li>
+                <li>
+                  <code>:nth-last-of-type()</code>
+                  <p>...matches elements of a given type, based on their position among a group of siblings, counting from the end</p>
+                </li>
+                <li>
+                  <code>:nth-of-type()</code>
+                  <p>...matches elements of a given type (tag), based on their position among a group of siblings</p>
+                </li>
+                <li>
+                  <code>:only-child</code>
+                  <p>...represents an element without any siblings</p>
+                </li>
+                <li>
+                  <code>:only-of-type</code>
+                  <p>...represents an element that has no siblings of the same type</p>
+                </li>
+                <li>
+                  <code>:optional</code>
+                  <p>...represents any input, select, or textarea element that does not have the required attribute set on it.</p>
+                </li>
+                <li>
+                  <code>:out-of-range</code>
+                  <p>...represents an input element whose current value is outside the range limits specified by the min and max attributes (handy for givinga visual indication that a field's current value is outside the permitted limits).</p>
+                </li>
+                <li>
+                  <code>:read-only</code>
+                  <p>...represents an element (such as input or textarea) that is not editable by the user</p>
+                </li>
+                <li>
+                  <code>:read-write</code>
+                  <p>...represents an element (such as input or textarea) that is editable by the user.</p>
+                </li>
+                <li>
+                  <code>:required</code>
+                  <p>...represents any input, select, or textarea element that has the required attribute set on it.</p>
+                </li>
+                <li>
+                  <code>:right</code>
+                  <p>...represents all right-hand pages of a printed document and is used with <i>@page</i> rule.</p>
+                </li>
+                <li>
+                  <code>:root</code>
+                  <p>...matches the root element of a tree representing the document</p>
+                </li>
+                <li>
+                  <code>:scope</code>
+                  <p>...represents elements that are a reference point for selectors to match against.</p>
+                </li>
+                <li>
+                  <code>:target</code>
+                  <p>...represents a unique element (the target element) with an id matching the URL's fragment.</p>
+                </li>
+                <li>
+                  <code>:valid</code>
+                  <p>...represents any input or other form element whose contents validate succesfully (useful to highlight correctly filled out fields in a form).</p>
+                </li>
+                <li>
+                  <code>:visited</code>
+                  <p>...represents links that the user has already visited</p>
+                </li>
               </ul>
             </li>
           </ul>
@@ -319,14 +443,38 @@ Finding your way around
               <!--examples of pseudo element keywords-->
               <p>Some examples...</p>
               <ul class="code-keyword-sublist">
-                <li><code>::after</code></li>
-                <li><code>::before</code></li>
-                <li><code>::cue</code></li>
-                <li><code>::cue-region</code></li>
-                <li><code>::first-letter</code></li>
-                <li><code>::first-line</code></li>
-                <li><code>::selection</code></li>
-                <li><code>::slotted()</code></li>
+                <li>
+                  <code>::after</code>
+                  <p>...creates a pseudo-element that is the last child of the selected element (often used to add cosmetic content to an element with the content property).</p>
+                </li>
+                <li>
+                  <code>::before</code>
+                  <p>...creates a pseudo-element that is the first child of the selected element (often used to add cosmetic content to an element with the content property).</p>
+                </li>
+                <li>
+                  <code>::cue</code>
+                  <p>...matches WebVTT cues within a selected element (used to style captions and other cues in media with VTT tracks).</p>
+                </li>
+                <li>
+                  <code>::cue-region</code>
+                  <p>...matches WebVTT cues within a selected element (used to style captions and other cues in media with VTT tracks).</p>
+                </li>
+                <li>
+                  <code>::first-letter</code>
+                  <p>...applies styles to the first letter of the first line of a block-level element BUT only when not preceded by other content!</p>
+                </li>
+                <li>
+                  <code>::first-line</code>
+                  <p>...applies styles to the first line of a block-level element.</p>
+                </li>
+                <li>
+                  <code>::selection</code>
+                  <p>...applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text)</p>
+                </li>
+                <li>
+                  <code>::slotted()</code>
+                  <p>...represents any element that has been placed into a slot inside an HTML template (only works when used inside CSS placed within a shadow DOM).</p>
+                </li>
               </ul>
             </li>
           </ul>
@@ -418,11 +566,11 @@ Finding your way around
       <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
         <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
         <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
-        <a href="https://mazcodesonthemoon.wordpress.com/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
+        <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css" target="_blank"> <span class="fab fa-wordpress"> </span></a>
       </p>
     </div>
     <!--Back to top shortcut-->
     <div class="backtotop"><a class="toplink" href="#top"><i class="far fa-arrow-alt-circle-up"></i></a></div>
   </footer>
- </body>
+</body>
 </html>
