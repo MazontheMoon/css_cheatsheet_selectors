@@ -319,6 +319,7 @@ Finding your way around
                   <code>:in-range</code>
                   <p>...represents an input element whose current value is within the range limits specified by the min and max attributes (cane be used to give the user a visual indication that a field's current value is within the permitted limits).</p>
                 </li>
+                
                 <li>
                   <code>:invalid</code>
                   <p>...represents any input or other form element whose contents fail to validate (useful to highlight errors when filling out a form).</p>
@@ -417,7 +418,7 @@ Finding your way around
                 </li>
                 <li>
                   <code>:where</code>
-                  <p>...selects any element that can be selected by one of the selectors in that list.</p>
+                  <p>...selects any element that can be selected by one of the selectors in that list(specificity is 0).</p>
                   <p><i>(:where(ul, ol) {...})</i></p>
                 </li>
               </ul>
