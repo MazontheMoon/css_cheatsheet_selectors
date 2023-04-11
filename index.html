@@ -300,6 +300,11 @@ Finding your way around
                   <p>... represents an element that has received focus or contains an element that has received focus (For example used for highlighting an entire <i>form</i>container when the user focuses on one of its <i>input</i> fields)</p>
                 </li>
                 <li>
+                  <code>:has</code>
+                  <p>...a “parent” selector to select elements that contain elements that match the selector you pass into it (takes the specificity of the most specific selector in its arguments.)</p>
+                  <p><i>div:has(p) {...}</i></p>
+                </li>
+                <li>
                   <code>:host</code>
                   <p>... selects the shadow host of the shadow DOM containing the CSS it is used inside(<b>has no effect when used outside a shadow DOM)</b></p>
                 </li>
