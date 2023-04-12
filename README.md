@@ -22,7 +22,7 @@ Web Browser
 Version #1.1 - Initial Content
 Version #1.2 - Initial Styling
 Version #1.3 - Testing
-Version #1.4 - Update to add :where selector subsection (In progress)
+Version #1.4 - Update to add :where, :has, :is selector subsections 
 
 ## Table of Contents 
 
