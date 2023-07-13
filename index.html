@@ -30,7 +30,8 @@ Finding your way around
 6. section 4 - Pseudo Elements
 7. section 5 - Combinators 
 8. section 6 - Multiple Selectors 
-8. footer 
+9. section 7 - Tips
+10. footer 
 --------------------------------------------------->
 
 <body>
@@ -48,6 +49,7 @@ Finding your way around
       <li><a class="menu-button" href="#pseudo-element">Pseudo Elements</a></li>
       <li><a class="menu-button" href="#combinator">Combinator Selectors</a></li>
       <li><a class="menu-button" href="#multiple">Multiple Selectors</a></li>
+      <li><a class="menu-button" href="#tips">Tips</a></li>
     </ul>
   </nav>
   <!--main content-->
@@ -574,6 +576,24 @@ Finding your way around
           </ul>
         </div>
       </section>
+      <!--section7 - tips -->
+      <section id="tips">
+        <!--section heading-->
+        <header>
+          <h3>Selector Tips</h3>
+        </header>
+        <!--section content-->
+        <div class="section-content">
+          <p>Try wrapping your head around these funky selectors!</p>
+          <ul class="section-content-non-list">
+            <li>
+              <p class="code-example-box">
+                <span class="comment-code">/* select all elements between 2 different class names*/</span><br>
+                .start ~ :not(.end, .end ~ * ) {...}
+              </p>
+            </li>
+          </ul>
+        </div>
     </div>
   </main>
   <!--footer-->
